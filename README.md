@@ -62,19 +62,6 @@ The database design supports the following logical operations:
     * Verify the tables are created in your MySQL instance.
     * Check constraints (Foreign Keys and Primary Keys) using the "Inspector" tab.
 
-## 📸 Demo
-
-Below are the Entity-Relationship Diagrams (EER) generated for each project:
-
-### 1. Optics Store
-![Optics Diagram](./Optica.png)
-
-### 2. Pizzeria
-![Pizzeria Diagram](./Pizzeria.png)
-
-### 3. YouTube
-![YouTube Diagram](./Youtube.png)
-
 ## 🧩 Diagrams and Technical Decisions
 
 ### Optics Store Decisions
