@@ -1,0 +1,2 @@
+SELECT p.name, SUM(od.quantity) AS 'Quantity' FROM product p INNER JOIN order_details od ON p.Product_id = od.Product_Product_id INNER JOIN orders o ON o.idOrders = od.Orders_idOrders INNER JOIN store s ON s.idStore= o.Store_id INNER JOIN city city ON city.idCity = s.City_id WHERE type = 'Beguda' AND city.name = 'Barcelona' GROUP BY p.name;
+SELECT e.idEmployee, e.name, COUNT(ot.employee_id) AS 'Total orders' FROM employee e INNER JOIN order_type_details ot ON ot.Employee_id = e.idEmployee WHERE e.name = 'Marc' GROUP BY e.idEmployee, e.name;

@@ -1,0 +1,3 @@
+SELECT c.id_customer, c.name, COUNT(g.id_glasses) AS 'Facturas' FROM customer c INNER JOIN glasses g ON c.id_customer = g.Customer_id WHERE c.id_customer = 1 AND g.sale_date BETWEEN '2023-01-01' AND '2024-01-01' GROUP BY c.name, c.id_customer;
+SELECT DISTINCT b.name AS 'Brand name', e.name AS 'Employee name' FROM brand b INNER JOIN glasses g ON b.id_brand = g.brand_id INNER JOIN employee e ON e.id_employee = g.Employee_id WHERE e.id_employee = 1 AND g.sale_date BETWEEN '2023-01-01' AND '2024-01-01';
+SELECT DISTINCT s.name, COUNT(g.brand_id) AS 'Quantity' FROM supplier s INNER JOIN brand b ON b.Supplier_id = s.id_supplier INNER JOIN glasses g ON g.brand_id = b.id_brand WHERE g.sale_date IS NOT NULL GROUP BY s.name;
